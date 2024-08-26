@@ -34,4 +34,8 @@ age = 2 or age = 4 but we cant say age = 2 and age = 4 coz
 the age cant be 2 and 4 at the same time , of a person
 
 ..... WHERE (age is null) or (age is not null)
+=> this gives the result where age is null also the  age is not null (BOTH)
+if we do  ..... WHERE (age is null) AND (age is not null) 
+=> no results , returns null which means nothing
+- yeutai table ma null and not null hunai sakdaina
 */
