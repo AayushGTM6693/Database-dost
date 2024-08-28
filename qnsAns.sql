@@ -18,3 +18,26 @@ select count(DISTINCT title)from titles
 -- * Make sure there are no nulls
 -- */
 select DISTINCT lifeexpectancy from country where lifeexpectancy IS NOT null 
+
+-- * Question: Sort employees who's name starts with a "k" by hire_date
+-- */
+SELECT * FROM employees
+WHERE first_name ILIKE 'k%'
+ORDER BY hire_date;
+
+
+-- * Question: Can I get a list of distinct life expectancy ages
+-- * Make sure there are no nulls
+-- */
+select DISTINCT lifeexpectancy from country where lifeexpectancy IS NOT null 
+
+
+-- order by // sorting data
+select  * from city order by id,name desc
+select name from city order by length(name) DESC
+
+-- * Question: Sort employees who's name starts with a "k" by hire_date
+-- */
+SELECT * FROM employees
+WHERE first_name ILIKE 'k%'
+ORDER BY hire_date;
