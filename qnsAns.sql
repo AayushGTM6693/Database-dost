@@ -41,3 +41,9 @@ select name from city order by length(name) DESC
 SELECT * FROM employees
 WHERE first_name ILIKE 'k%'
 ORDER BY hire_date;
+
+-- multi table select
+select a.emp_no, b.salary , b.from_date from employees as a , salaries as b where a.emp_no = b.emp_no
+-- aggregating with linking
+-- joins -- combining column
+order by a.emp_no -- sorting
