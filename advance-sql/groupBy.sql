@@ -85,3 +85,6 @@ starting from the most specific grouping (all columns),
 select region , product , sum(total_sales)
 from sales
 group by ROLLUP(region,product)
+
+
+-- chatgpt link => https://chatgpt.com/share/66e3ca55-480c-8006-8844-82f98ab79a32
