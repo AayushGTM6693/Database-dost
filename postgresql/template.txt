@@ -1,0 +1,10 @@
+- template0 is the backup template 
+- template1 is to create a new databases(default)
+
+psql -U postgres postgres
+CREATE DATABASE ztm;
+
+- default schema is public
+select * from public.employees
+- \dn => show all schema
+- CREATE SCHEMA sales;
