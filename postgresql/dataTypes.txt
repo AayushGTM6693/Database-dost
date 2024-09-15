@@ -1,0 +1,32 @@
+numeric types
+arrays
+character types
+date/time types
+boolean => true, false , null
+uuid
+
+CHARACTER
+char(N) => fixed length with space padding
+varchar(N) =>  variable length with no padding
+text => unlimites length text
+
+NUMERIC
+integer => whole num, not fraction
+Types of integer are smallint, int, bigint
+floating points => number contains a decimal point.
+Types of floating 
+float4/float8
+6 and 15 digits of precision
+AND
+decimal
+before and after decimal, larger precision
+
+ARRAYS 
+group of elem of same type
+eg
+CREATE TABLE test (
+    four char(5)[]
+);
+insert into test (
+    ARRAY ['atus','at','atuss','aa']
+)

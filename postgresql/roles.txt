@@ -1,0 +1,13 @@
+- creating role
+CREATE ROLE readonly with LOGIN ENCRYPTED PASSWORD 'readonly';'
+create user also we can achieve same thing
+or 
+~createuser --interactive
+
+- default allow all connection
+config ma gayera => method => scram-sha-256
+
+GRANT permission
+GRANT ALL (or SELECT - for readonly) ON ALL TABLES IN SCHEMA public TO privilegetest;
+REVOKE
+REVOKE SELECT ON titles FROM privilegetest;
