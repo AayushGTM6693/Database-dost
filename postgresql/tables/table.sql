@@ -24,6 +24,9 @@ same as column but we can give column list
 UNIQUE(column_list)
 */
 
+-- delete 
+-- delete from subject where subject = 'sql'
+
 -- TABLES
 -- 1. Subject 
 create table subject (
@@ -57,4 +60,12 @@ course_id uuid REFERENCES course(course_id),
 student_id uuid REFERENCES student(student_id),
 enrollment_date date not null,
 constraint pk_enrollement primary key (course_id, student_id)
+)
+
+create table feedback (
+student_id uuid REFERENCES student(student_id),
+course_id UUID REFERENCES course(course_id),
+rating rating,
+feedback text,
+CONSTRAINT pk_feedback primary key (student_id,course_id)
 )
