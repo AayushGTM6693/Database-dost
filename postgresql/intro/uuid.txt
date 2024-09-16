@@ -1,0 +1,4 @@
+unique, easier to shard
+- easier to merge and replicate
+can have performance impact
+- expose less information

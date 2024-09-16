@@ -1,0 +1,2 @@
+- table name must be singular, first letter capital though
+- columns must be lowercase with underscores
